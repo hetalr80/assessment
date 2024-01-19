@@ -1,0 +1,85 @@
+{
+  "config": [
+    {
+      "key": "country",
+      "dependsOn": "",
+      "validations": [
+        {
+          "type": "IS_REQUIRED",
+          "value": true
+        }
+      ]
+    },
+    {
+      "key": "username",
+      "dependsOn": "country",
+      "dependencies": {
+        "AE": {
+          "validations": [
+            {
+              "type": "IS_REQUIRED",
+              "value": true
+            },
+            {
+              "type": "MIN_LENGTH",
+              "value": "5"
+            },
+            {
+              "type": "MAX_LENGTH",
+              "value": "15"
+            }
+          ]
+        },
+        "EG": {
+          "validations": [
+            {
+              "type": "IS_REQUIRED",
+              "value": true
+            },
+            {
+              "type": "MIN_LENGTH",
+              "value": "6"
+            },
+            {
+              "type": "MAX_LENGTH",
+              "value": "15"
+            },
+            {
+              "type": "REGEX_FE",
+              "value": "[a-zA-Z0-9-$ ]+$"
+            }
+          ]
+        },
+        "IN": {
+          "validations": [
+            {
+              "type": "IS_REQUIRED",
+              "value": true
+            },
+            {
+              "type": "MIN_LENGTH",
+              "value": "8"
+            },
+            {
+              "type": "MAX_LENGTH",
+              "value": "20"
+            },
+            {
+              "type": "REGEX_FE",
+              "value": "^[a-zA-Z][a-zA-Z0-9-$ ]+$"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "key": "password",
+      "validations": [
+        {
+          "type": "IS_REQUIRED",
+          "value": true
+        }
+      ]
+    }
+  ]
+}

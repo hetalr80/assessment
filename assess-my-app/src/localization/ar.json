@@ -1,0 +1,34 @@
+{
+  "login": {
+    "header": {
+      "title": "نظام إدارة المصادقة"
+    },
+    "loginForm": {
+      "title": "الرجاء إدخال اسم المستخدم وكلمة المرور الخاصة بك",
+      "form": {
+        "country": {
+          "label": "دولة",
+          "validation": {
+            "required": "الدولة مطلوبة"
+          }
+        },
+        "username": {
+          "label": "اسم المستخدم",
+          "validation": {
+            "minLength": "مطلوب {minLength} على الأقل",
+            "invalid": "اسم المستخدم غير صالح",
+            "required": "اسم المستخدم مطلوب"
+          }
+        },
+        "password": {
+          "label": "كلمة المرور",
+          "validation": {
+            "invalid": "رمز مرور خاطئ",
+            "required": "كلمة المرور مطلوبة"
+          }
+        }
+      },
+      "submit": "تسجيل الدخول"
+    }
+  }
+}

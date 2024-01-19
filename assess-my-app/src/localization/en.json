@@ -1,0 +1,35 @@
+{
+  "login": {
+    "header": {
+      "title": "Auth Management System"
+    },
+    "appName": "Welcome to Mashreq",
+    "loginForm": {
+      "title": "Please provide following details",
+      "form": {
+        "country": {
+          "label": "Country",
+          "validation": {
+            "required": "Country is required"
+          }
+        },
+        "username": {
+          "label": "Username",
+          "validation": {
+            "minLength": "At least {{length}} is required",
+            "invalid": "Invalid username",
+            "required": "Username is required"
+          }
+        },
+        "password": {
+          "label": "Password",
+          "validation": {
+            "invalid": "Invalid password",
+            "required": "Password is required"
+          }
+        }
+      },
+      "submit": "Login"
+    }
+  }
+}
